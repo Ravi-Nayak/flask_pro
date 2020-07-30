@@ -1,0 +1,48 @@
+
+{% extends 'base.html' %}
+{% include 'home.html' %}
+{% block body %}
+    <title>{% block title %}Employee Management System {% endblock %} </title>
+
+
+    <script>$(document).ready(function() {
+    $('#example').DataTable();
+} );</script>
+      <h3>
+         <a href = "{{ url_for('list_employees') }}">Employee Management System</a>
+      </h3>
+
+      <hr/>
+      {%- for message in get_flashed_messages() %}
+         {{ message }}
+      {%- endfor %}
+
+      <h3>Employees List</h3>
+      <table id="example" class="display" style="width:100%">
+         <thead>
+            <tr>
+               <th>Name</th>
+               <th>Salary</th>
+               <th>Age</th>
+               <th>Pin</th>
+                <th>Delete</th>
+
+            </tr>
+         </thead>
+
+         <tbody>
+            {% for employee in Employees %}
+               <tr>
+                  <td>{{ employee.name }}</td>
+                  <td>{{ employee.salary }}</td>
+                  <td>{{ employee.age }}</td>
+                  <td>{{ employee.pin }}</td>
+                   <td><a href="/delete/{{employee.id}}" class="btn btn-danger btn-xs" onclick="return confirm('Are You Sure To Delete ?')">Delete</a></td>
+               </tr>
+            {% endfor %}
+         </tbody>
+      </table>
+      <br><br>
+
+
+ {% endblock %}

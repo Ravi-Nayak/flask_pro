@@ -1,0 +1,7 @@
+body {
+  background-color: chartreuse;
+  margin-bottom: 60px;
+}
+
+
+#success_message{ display: none;}

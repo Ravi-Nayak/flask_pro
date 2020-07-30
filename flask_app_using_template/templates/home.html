@@ -1,0 +1,31 @@
+
+{% extends 'base.html' %}
+
+{% block body %}
+<body>
+<h1 style="text-align: center">Welcome to Basic Application with Flask </h1>
+
+
+
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+    <img src="{{ url_for('static', filename='images/logo.jpg')  }}"  alt="logo" style="width:50px;">
+    </div>
+      <h3><a  href="/">Home</a></h3>
+
+      <h3><a href="http://localhost:5000/pic">Galary</a></h3>
+      <h3><a href="http://localhost:5000/add">Registration</a></h3>
+      <h3><a href="http://localhost:5000/view">Employee info</a></h3>
+
+  </div>
+</nav>
+
+<div class="footer">
+
+  <p>Author:Ravi Rathod<br>
+  <a href="mailto:ravir6630@gmial.com">ravi6630@gmail.com</a></p>
+</div>
+</body>
+{% endblock %}

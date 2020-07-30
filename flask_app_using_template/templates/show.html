@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% include 'home.html' %}
+{% block body %}
+<body>
+<h1>Welcome to My Galary </h1><hr><br>
+<div class="container">
+      <div class="row">
+          <div class="col-md-3 col-sm-6 col-xs-12"><img src="{{ url_for('static', filename='images/je.jpg')  }}"  alt="Girl in a jacket" width="300" height="300"></div>
+          <div class="col-md-3 col-sm-6 col-xs-12"><img src="{{ url_for('static', filename='images/j.jpg')  }}"  alt="Girl in a jacket" width="300" height="300"></div>
+          <div class="col-md-3 col-sm-6 col-xs-12"><img src="{{ url_for('static', filename='images/a1.jpg')  }}"  alt="Girl in a jacket" width="300" height="300"></div>
+          <div class="col-md-3 col-sm-6 col-xs-12"><img src="{{ url_for('static', filename='images/a2.jpg')  }}"  alt="Girl in a jacket" width="300" height="300"></div>
+
+      </div><br>
+ <div class="row">
+          <div class="col-md-3 col-sm-6 col-xs-12"><img src="{{ url_for('static', filename='images/a3.jpg')  }}"  alt="Girl in a jacket" width="300" height="300"></div>
+          <div class="col-md-3 col-sm-6 col-xs-12"><img src="{{ url_for('static', filename='images/a4.jpg')  }}"  alt="Girl in a jacket" width="300" height="300"></div>
+          <div class="col-md-3 col-sm-6 col-xs-12"><img src="{{ url_for('static', filename='images/a5.png')  }}"  alt="Girl in a jacket" width="300" height="300"></div>
+         <div class="col-md-3 col-sm-6 col-xs-12"><img src="{{ url_for('static', filename='images/a6.png')  }}"  alt="Girl in a jacket" width="300" height="300"></div>
+
+      </div><br>
+     <div class="row">
+          <div class="col-md-3 col-sm-6 col-xs-12"><img src="{{ url_for('static', filename='images/a7.png')  }}"  alt="Girl in a jacket" width="300" height="300"></div>
+          <div class="col-md-3 col-sm-6 col-xs-12"><img src="{{ url_for('static', filename='images/a8.png')  }}"  alt="Girl in a jacket" width="300" height="300"></div>
+          <div class="col-md-3 col-sm-6 col-xs-12"><img src="{{ url_for('static', filename='images/a9.png')  }}"  alt="Girl in a jacket" width="300" height="300"></div>
+         <div class="col-md-3 col-sm-6 col-xs-12"><img src="{{ url_for('static', filename='images/a10.png')  }}"  alt="Girl in a jacket" width="300" height="300"></div>
+
+      </div><br>
+
+
+</div>
+</body>
+{% endblock %}
